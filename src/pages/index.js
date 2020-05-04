@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
+import axios from 'axios';
 import useForm from '../Functions/useForm';
 import Layout from '../components/layout/Layout';
 
@@ -16,15 +17,15 @@ export default function Signin() {
   });
 
   function signin() {
-    return fetch(formUrl, {
-      method: 'POST',
-      body: JSON.stringify(state)
-    }).then(res => {
-      if (res.statusText === 'OK') {
-        return res;
+    setStatus('sending');
+    return axios.post(formUrl, state).then(
+      res => {
+        setStatus('sending');
+      },
+      err => {
+        setStatus('sent_fail');
       }
-      throw new Error();
-    });
+    );
   }
   return (
     <Layout>
@@ -84,6 +85,7 @@ export default function Signin() {
           <button type="submit">Sign in</button>
         </fieldset>
       </form>
+      <pre>{JSON.stringify(state, null, 2)}</pre>
     </Layout>
   );
 }
