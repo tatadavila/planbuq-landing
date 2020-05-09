@@ -1,7 +1,10 @@
 {
   "name": "gatsby-starter-lander",
   "author": "Hunter Chang",
-  "repository": "https://github.com/codebushi/gatsby-starter-lander",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codebushi/gatsby-starter-lander.git"
+  },
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -9,22 +12,40 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "@popperjs/core": "^2.4.0",
+    "acorn": "^7.1.1",
+    "acorn-dynamic-import": "4.0.0",
+    "acorn-jsx": "^5.2.0",
     "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "braces": "^3.0.2",
     "gatsby": "^2.18.18",
     "gatsby-theme-codebushi": "1.0.0",
-    "react": "^16.12.0",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^16.12.0"
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "tsutils": "^3.17.1",
+    "typescript": "^3.8.3",
+    "yargs-parser": "^18.1.3"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
     "prettier": "^1.19.1"
-  }
+  },
+  "description": "Site to introduce Planbuq to customers",
+  "bugs": {
+    "url": "https://github.com/codebushi/gatsby-starter-lander/issues"
+  },
+  "homepage": "https://github.com/codebushi/gatsby-starter-lander#readme",
+  "main": "gatsby-browser.js"
 }

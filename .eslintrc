@@ -8,6 +8,18 @@
     "node": true
   },
   "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "at-rule-no-unknown": [ true, {
+        "ignoreAtRules": [
+            "extends",
+            "apply",
+            "tailwind",
+            "components",
+            "utilities",
+            "screen"
+        ]
+    }]
   }
 }
