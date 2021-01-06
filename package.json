@@ -16,7 +16,7 @@
     "acorn": "^7.1.1",
     "acorn-dynamic-import": "4.0.0",
     "acorn-jsx": "^5.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "braces": "^3.0.2",
     "gatsby": "^2.18.18",
